@@ -8,7 +8,7 @@ function Navbar() {
     const [openDrawer, setOpenDrawer] = useState(false)
     return (
 
-        <AppBar position='static'>
+        <AppBar position='sticky'>
 
             <Stack sx={
                 {
