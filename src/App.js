@@ -3,8 +3,30 @@ import { createTheme, colors } from '@mui/material'
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Pages/Home';
+import { Box } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
 import About from './components/Pages/About';
+import Projects from './components/Pages/Projects';
+import Contact from './components/Pages/Contact';
+const projects =
+    [{
+        image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIzSKEkQtCFn5Q9wq5YlNTRQwx2PBJgzWG6Q&usqp=CAU',
+        title: 'Groww',
+        description: 'This is very good app to work with different',
+        github: 'https://github.com/abhi103767',
+        deployedlink: 'groww-project.herokuapp.com/home',
+        techstack: ['HTML', 'CSS', 'JAVASCRIPT', 'CHARTJS']
+    },
+    {
+        image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIzSKEkQtCFn5Q9wq5YlNTRQwx2PBJgzWG6Q&usqp=CAU',
+        title: 'Groww',
+        description: 'This is very good app to work with different',
+        github: 'https://github.com/abhi103767',
+        deployedlink: 'groww-project.herokuapp.com/home',
+        techstack: ['HTML', 'CSS', 'JAVASCRIPT', 'CHARTJS']
+    }
+    ]
+    console.log(projects);
 
 function App() {
   const theme = createTheme({
@@ -19,10 +41,43 @@ function App() {
 });
   return (
     <ThemeProvider theme={theme}>
-    <div className="App">
+    <div className="App" style={
+      { 'min-width': '500px'}
+      }>
    <Navbar />
    <Home />
    <About />
+   <Box display={'flex'}
+            sx={
+                {
+
+                    width: {
+                        md: '1000px',
+                        sm : '500px',
+                        xs: '90%'
+                    },
+                    flexDirection: {
+                        md: 'row',
+                        xs: 'column'
+                    },
+                    justifyContent: {
+                        md: 'space-between'
+                    }
+
+                }
+            }
+            margin={'auto'}
+
+            border={'1px solid red'}
+            my={10}>
+              {
+                projects.map((project) => {
+                  return (<Projects project={project} />)
+                })
+              }
+            </Box>
+            <Contact />
+   
 
     </div>
     </ThemeProvider>
