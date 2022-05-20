@@ -18,26 +18,37 @@ function About() {
                         flexDirection: {
                             md: 'row',
                             xs: 'column'
+                        },
+                        justifyContent: {
+                            md: 'space-between',
+                            xs: 'center'
+
+                        },
+                        alignItems: {
+                            md: 'normal',
+                            xs: 'center'
+                        },
+                        gap: {
+                            md: '10px'
                         }
                     }
                 }
                 width={'80%'}
                 margin={'auto'}
-                justifyContent={'space-between'}
             >
-                <Box>
+                <Box maxWidth={'400px'}>
                     <img src='https://media-exp1.licdn.com/dms/image/C4E03AQFyGbbhMwdx8g/profile-displayphoto-shrink_400_400/0/1638850539412?e=1658361600&v=beta&t=8xybHU994aF_Ltv6l30B_gCazl4qpOj4ger_3l4s5PA' />
                 </Box>
-                <Box width={'60%'}>
-                    <Box>
-                        <p>
+                <Box width={'100%'}>
+                    <Box >
+                        <p >
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores porro pariatur officiis nesciunt voluptatum. Quia, atque beatae ad voluptatum neque temporibus et, eaque, nobis minus doloribus maiores voluptates tempore doloremque?
                             Doloribus atque illum repellendus asperiores, optio aut doloremque in nam eveniet repellat, animi temporibus voluptate incidunt molestiae excepturi esse quasi dolorem a perspiciatis. Iusto dolor porro, sed tempore voluptas laborum.
                             Dignissimos sequi numquam animi debitis culpa nesciunt commodi officia saepe hic, aliquam cupiditate autem quos recusandae nam sed soluta, assumenda unde, corporis eos totam. Numquam veniam quaerat eligendi culpa quis!
                         </p>
                     </Box>
 
-                    <Box display={'flex'} gap={'15px'}>
+                    <Box display={'flex'} gap={'15px'} >
                         <Box>
                             <Button sx={
                                 {

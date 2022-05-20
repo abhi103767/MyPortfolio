@@ -28,8 +28,35 @@ function Home() {
     return (
         <div>
 
-            <Box height={'100vh'} display={'flex'} >
-                <Box display={'flex'} margin={'auto'} width={
+            <Box height={'100vh'}
+                sx={
+                    {
+                        height: {
+                            md: '100vh',
+                            sm: '70vh'
+                        }
+
+                    }
+                }
+                display={'flex'} margin={'auto'}>
+                <Box display={'flex'} sx={
+                    {
+                        flexDirection: {
+                            md: 'row',
+                            sm: 'row',
+                            xs: 'column-reverse'
+                        },
+                        justifyContent: {
+                            sm: 'space-evenly',
+                            xs: 'space-evenly'
+
+                        },
+                        alignItems: {
+                            sm: 'normal',
+                            xs: 'center'
+                        }
+                    }
+                } margin={'auto'} width={
                     {
                         md: '100%',
                         sm: '80%',
@@ -46,11 +73,20 @@ function Home() {
                         }
                     } justifyContent={'space-evenly'} >
                     <Box>
-                        <Box paddingTop={10} paddingDown={2}>
-                            <Typography variant='h3'>Hii ! I am Avinash</Typography>
+                        <Box paddingTop={10} paddingDown={2} justifySelf='center'>
+                            <Typography variant={'h4'}>Hii ! I am Avinash</Typography>
                             <Typography variant='h4'>I am FullStackDeveloper</Typography>
                         </Box>
-                        <Box paddingTop={5} display={'flex'} gap='15px'>
+                        <Box paddingTop={5} sx={
+                            {
+                                justifyContent: {
+                                    sm: 'normal',
+                                    justifyContent: 'center'
+                                }
+                            }
+                        } display={'flex'} gap='15px' sm={{
+                            justifyContent: 'center'
+                        }}>
                             <Button variant='contained'>Resume</Button>
                             <Button variant='contained'>Get in Touch</Button>
                         </Box>
@@ -66,7 +102,7 @@ function Home() {
                         <Link target='_blank' href='https://example.com'>
                             <Email />
                         </Link> */}
-                        <Box borderRadius={'2px'}>
+                        <Box borderRadius={'2px'} >
                             <img src='https://media-exp1.licdn.com/dms/image/C4E03AQFyGbbhMwdx8g/profile-displayphoto-shrink_400_400/0/1638850539412?e=1658361600&v=beta&t=8xybHU994aF_Ltv6l30B_gCazl4qpOj4ger_3l4s5PA' />
                         </Box>
 

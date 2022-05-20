@@ -7,7 +7,8 @@ function Contact() {
         <Box height={'100vh'}>
 
             <TextField size='small' label='Enter Your Name' />
-            <TextField size='small' />
+            <TextField size='small' label='Enter Your Name' />
+
 
 
         </Box>

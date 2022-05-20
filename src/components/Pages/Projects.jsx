@@ -34,11 +34,13 @@ function Projects({ project }) {
                     md: '40%',
                     sm: '90%'
                 },
-                height: '100vh'
+                height: {
+                    md: '100vh',
+                    sm: '100vh'
+                }
 
             }
         } >
-            
             <Card elevation={4}>
                 <CardMedia
                     component="img"

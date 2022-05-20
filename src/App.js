@@ -52,16 +52,25 @@ function App() {
                 {
 
                     width: {
-                        md: '1000px',
+                        md: '100%',
                         sm : '500px',
-                        xs: '90%'
+                        xs: '100vw',
                     },
                     flexDirection: {
                         md: 'row',
                         xs: 'column'
                     },
                     justifyContent: {
-                        md: 'space-between'
+                        md: 'space-evenly',
+
+                      
+                    },
+                    alignItems: {
+                      md: 'flex-start',
+                      sm: 'flex-start'
+                    },
+                    height:{
+                      sm : '800px'
                     }
 
                 }
