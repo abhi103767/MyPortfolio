@@ -74,8 +74,8 @@ function Home() {
                     } justifyContent={'space-evenly'} >
                     <Box>
                         <Box paddingTop={10} paddingDown={2} justifySelf='center'>
-                            <Typography variant={'h4'}>Hii ! I am Avinash</Typography>
-                            <Typography variant='h4'>I am FullStackDeveloper</Typography>
+                            <Typography variant={'h2'}>Hii ! I am Avinash</Typography>
+                            <Typography variant='h2'>I am FullStackDeveloper</Typography>
                         </Box>
                         <Box paddingTop={5} sx={
                             {

@@ -31,24 +31,24 @@ function Projects({ project }) {
         <Box sx={
             {
                 width: {
-                    md: '40%',
-                    sm: '90%'
+                    md: '500px',
+                    sm: '70%'
                 },
                 height: {
                     md: '100vh',
                     sm: '100vh'
-                }
+                },
+
 
             }
-        } >
+        } boxSizing={'border-box'} p={3}>
             <Card elevation={4}>
                 <CardMedia
                     component="img"
-                    height="140"
                     image={project.image_url}
                     alt="green iguana"
                 />
-                <CardContent>
+                <CardContent >
                     <Typography gutterBottom variant="h5" component="div">
                         {
                             project.title

@@ -52,8 +52,8 @@ function App() {
                 {
 
                     width: {
-                        md: '100%',
-                        sm : '500px',
+                        md: '90%',
+                        sm : '100vw',
                         xs: '100vw',
                     },
                     flexDirection: {
@@ -61,13 +61,10 @@ function App() {
                         xs: 'column'
                     },
                     justifyContent: {
-                        md: 'space-evenly',
-
-                      
+                        md: 'center',   
                     },
                     alignItems: {
-                      md: 'flex-start',
-                      sm: 'flex-start'
+                   
                     },
                     height:{
                       sm : '800px'
@@ -77,8 +74,7 @@ function App() {
             }
             margin={'auto'}
 
-            border={'1px solid red'}
-            my={10}>
+            border={'1px solid red'}>
               {
                 projects.map((project) => {
                   return (<Projects project={project} />)
