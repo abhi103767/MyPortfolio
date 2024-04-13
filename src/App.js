@@ -10,7 +10,7 @@ import Projects from './components/Pages/Projects';
 import Contact from './components/Pages/Contact';
 const projects =
     [{
-        image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIzSKEkQtCFn5Q9wq5YlNTRQwx2PBJgzWG6Q&usqp=CAU',
+        image_url: 'http://3.95.179.169:7500/home',
         title: 'Groww',
         description: 'This is very good app to work with different',
         github: 'https://github.com/abhi103767',
@@ -18,7 +18,7 @@ const projects =
         techstack: ['HTML', 'CSS', 'JAVASCRIPT', 'CHARTJS']
     },
     {
-        image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIzSKEkQtCFn5Q9wq5YlNTRQwx2PBJgzWG6Q&usqp=CAU',
+        image_url: 'http://3.95.179.169:7500/home',
         title: 'Groww',
         description: 'This is very good app to work with different',
         github: 'https://github.com/abhi103767',
